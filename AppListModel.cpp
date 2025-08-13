@@ -2,8 +2,7 @@
 #include<QDebug>
 AppListModel::AppListModel() {
     qDebug()<<Q_FUNC_INFO;
-    m_jsonarser = new JsonParser("/home/shankar/QmlPlugins");
-    m_jsonarser->parseFolders();
+    m_jsonarser = JsonParser::getInstance();
     this->setAppsData(m_jsonarser->getAppDataList());
     for (const auto &app : appsData) {
         qDebug() << "App Name:" << app->appName()

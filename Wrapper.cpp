@@ -15,32 +15,33 @@ Wrapper::Wrapper(QObject *parent)
 
 bool Wrapper::loadFromJson(const QString &path)
 {
-    qDebug() << "Loading apps from JSON:" << path;
+    // qDebug() << "Loading apps from JSON:" << path;
 
-    JsonParser parser("/home/shankar/QmlPlugins");
-    if (!parser.parseFolders()) {
-        qWarning() << "Failed to parse folders in" << path;
-        return false;
-    }
+    // JsonParser parser("/home/shankar/QmlPlugins");
+    // if (!parser.parseFolders()) {
+    //     qWarning() << "Failed to parse folders in" << path;
+    //     return false;
+    // }
 
-    QList<App*> appList = parser.getAppDataList();
-    m_appModel->setAppsData(appList);
+    // QList<App*> appList = parser.getAppDataList();
+    // m_appModel->setAppsData(appList);
 
-    // Debug print
-    for (const auto &app : appList) {
-        qDebug() << "App Name:" << app->appName()
-                 << "Icon:" << app->icon()
-                 << "Category:" << app->categories();
-    }
+    // // Debug print
+    // for (const auto &app : appList) {
+    //     qDebug() << "App Name:" << app->appName()
+    //              << "Icon:" << app->icon()
+    //              << "Category:" << app->categories();
+    // }
 
-    // Build category list for CategoriesModel
-    QSet<QString> cats;
-    for (const auto &app : appList) {
-        cats.insert(app->categories());
-    }
-    m_categoriesModel->setCategories(QStringList(cats.begin(), cats.end()));
+    // // Build category list for CategoriesModel
+    // QSet<QString> cats;
+    // for (const auto &app : appList) {
+    //     cats.insert(app->categories());
+    // }
+    // m_categoriesModel->setCategories(QStringList(cats.begin(), cats.end()));
 
-    return !appList.isEmpty();
+    // return !appList.isEmpty();
+    return false;
 }
 
 void Wrapper::setCategoryFilter(const QString &category)

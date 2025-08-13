@@ -1,7 +1,9 @@
 #ifndef CATEGORIESMODEL_H
 #define CATEGORIESMODEL_H
 
+#include "JsonParser.h"
 #include "qabstractitemmodel.h"
+
 class CategoriesModel: public QAbstractListModel {
     Q_OBJECT
 public:
@@ -14,6 +16,7 @@ public:
     void setCategories(const QStringList &cats) ;
 private:
     QStringList m_categories;
+    JsonParser* m_jsonParser;
 
 public:
    explicit CategoriesModel(QObject *parent = nullptr);

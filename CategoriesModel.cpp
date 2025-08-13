@@ -8,6 +8,8 @@
 CategoriesModel::CategoriesModel(QObject *parent)
     : QAbstractListModel(parent)
 {
+    m_jsonParser = JsonParser::getInstance();
+    m_categories = m_jsonParser->getCategoryList();
 }
 
 QHash<int, QByteArray> CategoriesModel::roleNames() const {

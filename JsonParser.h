@@ -14,17 +14,21 @@ struct AppData {
 class JsonParser
 {
 public:
-    explicit JsonParser(const QString &directoryPath);
     bool parseFolders();
     QList<App*> getAppDataList();
+    QList<QString> getCategoryList();
 
     QString baseurl() const;
     void setBaseurl(const QString &newBaseurl);
+    static JsonParser* getInstance();
 
 private:
     QString m_baseurl;
     QList<App*> appDataList;
     void parseJson(const QString &filePath);
+    explicit JsonParser();
+    static JsonParser *m_jsonParser;
+    QStringList m_categoryList;
 };
 
 

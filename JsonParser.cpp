@@ -4,9 +4,14 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QFile>
-JsonParser::JsonParser(const QString &directoryPath) : m_baseurl(directoryPath)
+
+ JsonParser *JsonParser::m_jsonParser=nullptr;
+
+JsonParser::JsonParser()
 {
     qDebug()<<Q_FUNC_INFO;
+    m_baseurl="/home/shankar/QmlPlugins";
+    parseFolders();
 }
 
 bool JsonParser::parseFolders()
@@ -29,6 +34,11 @@ QList<App*> JsonParser::getAppDataList()
     return appDataList;
 }
 
+QList<QString> JsonParser::getCategoryList()
+{
+    return m_categoryList;
+}
+
 QString JsonParser::baseurl() const
 {
     return m_baseurl;
@@ -37,6 +47,13 @@ QString JsonParser::baseurl() const
 void JsonParser::setBaseurl(const QString &newBaseurl)
 {
     m_baseurl = newBaseurl;
+}
+
+JsonParser *JsonParser::getInstance()
+{
+    if(!m_jsonParser)
+        m_jsonParser=new JsonParser();
+    return m_jsonParser;
 }
 
 void JsonParser::parseJson(const QString &filePath)
@@ -60,5 +77,10 @@ void JsonParser::parseJson(const QString &filePath)
     app->setIcon(jsonObj.value("AppIcon").toString());
     app->setPluginPath(jsonObj.value("MainFileQml").toString());
     app->setCategories(jsonObj.value("Category").toString());
+    if(!m_categoryList.contains(app->categories()))
+    {
+        m_categoryList.push_back(app->categories());
+        qDebug()<< "categorys data: " <<app->categories();
+    }
     appDataList.append(app);
 }
