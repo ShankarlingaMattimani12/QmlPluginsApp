@@ -5,7 +5,7 @@ CONFIG += plugin c++11
 
 TARGET = $$qtLibraryTarget($$TARGET)
 uri = com.mycompany.FaceBook
-DESTDIR = $$PWD/bins/com/mycompany/FaceBook
+DESTDIR = $$PWD/../../Plugins_build/com/mycompany/FaceBook
 # Input
 SOURCES += \
         FaceBook.cpp \

@@ -5,7 +5,7 @@ CONFIG += plugin c++11
 
 TARGET = $$qtLibraryTarget($$TARGET)
 uri = com.mycompany.Instagram
-DESTDIR = $$PWD/bins/com/mycompany/Instagram
+DESTDIR = $$PWD/../../Plugins_build/com/mycompany/Instagram
 
 # Input
 SOURCES += \

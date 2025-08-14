@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_QML_DEBUG -DQT_PLUGIN -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../../../InstagramPlugin -I. -I../../../../Qt/6.7.0/gcc_64/include -I../../../../Qt/6.7.0/gcc_64/include/QtQuick -I../../../../Qt/6.7.0/gcc_64/include/QtOpenGL -I../../../../Qt/6.7.0/gcc_64/include/QtGui -I../../../../Qt/6.7.0/gcc_64/include/QtQmlModels -I../../../../Qt/6.7.0/gcc_64/include/QtQml -I../../../../Qt/6.7.0/gcc_64/include/QtQmlIntegration -I../../../../Qt/6.7.0/gcc_64/include/QtNetwork -I../../../../Qt/6.7.0/gcc_64/include/QtCore -I. -I../../../../Qt/6.7.0/gcc_64/mkspecs/linux-g++
+INCPATH       = -I../../../InstagramPlugin -I. -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/shankar/Qt/6.7.0/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = InstagramPlugin1.0.0
-DISTDIR = /home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/.tmp/InstagramPlugin1.0.0
+DISTDIR = /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/.tmp/InstagramPlugin1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/shankar/Qt/6.7.0/gcc_64/lib -Wl,-rpath-link,/home/shankar/Qt/6.7.0/gcc_64/lib -shared
 LIBS          = $(SUBLIBS) /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Quick.so /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6OpenGL.so /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Gui.so /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6QmlModels.so /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Qml.so /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6QmlBuiltins.a -pthread /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Network.so /home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Core.so -lpthread -lGL   
@@ -66,353 +66,354 @@ OBJECTS       = Instagram.o \
 		moc_InstagramPlugin_plugin.o \
 		moc_MyItem.o
 DIST          = ../../qmldir \
-		/Qt/6.7.0/gcc_64/mkspecs/features/spec_pre.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/unix.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/linux.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/sanitize.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/g++-base.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/common/g++-unix.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/qconfig.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bodymovin_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_example_icons_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jsonrpc_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_languageserver_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediaquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatch_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchconversions_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchgenerators_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlls_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltoolingsettings_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltyperegistrar_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickeffects_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/Qt/6.7.0/gcc_64/mkspecs/features/qt_functions.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/qt_config.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/spec_post.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/toolchain.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/default_pre.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/resolve_config.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/default_post.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/qml_debug.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/warn_on.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/permissions.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/qt.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/resources_functions.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/resources.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/moc.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/unix/opengl.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/unix/thread.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/qmake_use.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/file_copies.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/testcase_targets.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/exceptions.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/yacc.prf \
-		/Qt/6.7.0/gcc_64/mkspecs/features/lex.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/spec_pre.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/unix.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/linux.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/sanitize.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/g++-base.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/g++-unix.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/qconfig.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bodymovin_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_example_icons_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jsonrpc_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_languageserver_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediaquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatch_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchconversions_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchgenerators_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlls_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltoolingsettings_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltyperegistrar_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickeffects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt_functions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt_config.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../.qmake.stash \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/exclusive_builds.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/toolchain.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/default_pre.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resolve_config.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/default_post.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qml_debug.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/warn_on.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/permissions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resources_functions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resources.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/moc.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/unix/opengl.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/unix/thread.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qmake_use.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/file_copies.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/testcase_targets.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/exceptions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/yacc.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/lex.prf \
 		../../../../InstagramPlugin.pro ../../Instagram.h \
 		../../InstagramPlugin_plugin.h \
 		../../MyItem.h ../../Instagram.cpp \
 		../../InstagramPlugin_plugin.cpp \
 		../../MyItem.cpp
 QMAKE_TARGET  = InstagramPlugin
-DESTDIR       = ../../bins/com/mycompany/Instagram/
+DESTDIR       = ../../../../Plugins_build/com/mycompany/Instagram/
 TARGET        = libInstagramPlugin.so
 TARGETD       = libInstagramPlugin.so
 
@@ -420,720 +421,722 @@ TARGETD       = libInstagramPlugin.so
 first: all
 ####### Build rules
 
-../../bins/com/mycompany/Instagram/libInstagramPlugin.so: /home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/qmldir $(OBJECTS) $(SUBLIBS) $(OBJCOMP)  
-	@test -d ../../bins/com/mycompany/Instagram/ || mkdir -p ../../bins/com/mycompany/Instagram/
+../../../../Plugins_build/com/mycompany/Instagram/libInstagramPlugin.so: /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/qmldir $(OBJECTS) $(SUBLIBS) $(OBJCOMP)  
+	@test -d ../../../../Plugins_build/com/mycompany/Instagram/ || mkdir -p ../../../../Plugins_build/com/mycompany/Instagram/
 	-$(DEL_FILE) $(TARGET)
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(LIBS) $(OBJCOMP)
-	-$(MOVE) $(TARGET) ../../bins/com/mycompany/Instagram/$(TARGET)
+	-$(MOVE) $(TARGET) ../../../../Plugins_build/com/mycompany/Instagram/$(TARGET)
 
 
 
-Makefile: ../../InstagramPlugin.pro ../../../../Qt/6.7.0/gcc_64/mkspecs/features/spec_pre.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/unix.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/linux.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/sanitize.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/gcc-base.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/g++-base.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/common/g++-unix.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/qconfig.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bodymovin_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_example_icons_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jsonrpc_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_languageserver_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediaquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatch_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchconversions_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchgenerators_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlls_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltoolingsettings_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltyperegistrar_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickeffects_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/qt_functions.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/qt_config.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/spec_post.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/exclusive_builds.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/toolchain.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/default_pre.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/resolve_config.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/default_post.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/qml_debug.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/warn_on.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/permissions.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/qt.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/resources_functions.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/resources.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/moc.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/unix/opengl.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/unix/thread.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/qmake_use.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/file_copies.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/testcase_targets.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/exceptions.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/yacc.prf \
-		../../../../Qt/6.7.0/gcc_64/mkspecs/features/lex.prf \
+Makefile: ../../InstagramPlugin.pro /home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf /home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/spec_pre.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/unix.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/linux.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/sanitize.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/g++-base.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/g++-unix.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/qconfig.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bodymovin_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_example_icons_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jsonrpc_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_languageserver_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediaquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatch_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchconversions_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchgenerators_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlls_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltoolingsettings_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltyperegistrar_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickeffects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt_functions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt_config.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/exclusive_builds.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/toolchain.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/default_pre.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resolve_config.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/default_post.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qml_debug.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/warn_on.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/permissions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resources_functions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resources.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/moc.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/unix/opengl.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/unix/thread.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qmake_use.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/file_copies.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/testcase_targets.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/exceptions.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/yacc.prf \
+		/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/lex.prf \
 		../../InstagramPlugin.pro \
 		../../Instagram.qrc \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6Quick.prl \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6OpenGL.prl \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6Gui.prl \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6QmlModels.prl \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6Qml.prl \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6Network.prl \
-		../../../../Qt/6.7.0/gcc_64/lib/libQt6Core.prl
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Quick.prl \
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6OpenGL.prl \
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Gui.prl \
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6QmlModels.prl \
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Qml.prl \
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Network.prl \
+		/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Core.prl
 	$(QMAKE) -o Makefile ../../InstagramPlugin.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/spec_pre.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/unix.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/linux.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/sanitize.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/gcc-base.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/gcc-base-unix.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/g++-base.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/common/g++-unix.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/qconfig.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libpng.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bodymovin_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_example_icons_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jsonrpc_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_languageserver_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_linguist.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediaquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_png_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatch_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchconversions_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchgenerators_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlls_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltoolingsettings_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltyperegistrar_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickeffects_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_tools_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/qt_functions.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/qt_config.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/spec_post.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/exclusive_builds.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/toolchain.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/default_pre.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/resolve_config.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/default_post.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/qml_debug.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/warn_on.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/permissions.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/qt.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/resources_functions.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/resources.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/moc.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/unix/opengl.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/unix/thread.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/qmake_use.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/file_copies.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/testcase_targets.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/exceptions.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/yacc.prf:
-../../../../Qt/6.7.0/gcc_64/mkspecs/features/lex.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/spec_pre.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/unix.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/linux.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/sanitize.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/gcc-base-unix.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/g++-base.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/common/g++-unix.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/qconfig.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_ext_libpng.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_bodymovin_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_charts_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_chartsqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core5compat_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_datavisualizationqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_example_icons_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_graphs_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpc_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_grpcquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_httpserver_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttracker_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_insighttrackerqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_jsonrpc_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_languageserver_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_linguist.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_location_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediaquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdf_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_pdfwidgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_png_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobuf_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatch_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchconversions_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qdoccatchgenerators_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlbuiltins_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlls_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlnetwork_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltoolingsettings_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmltyperegistrar_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3d_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3deffects_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick3dutils_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basic_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2basicstyleimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusion_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2fusionstyleimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imagine_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2imaginestyleimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2material_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2materialstyleimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universal_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrols2universalstyleimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickeffects_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_scxmlqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sensorsquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachine_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_statemachineqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_tools_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_virtualkeyboardsettings_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webchannelquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginequickdelegatesqml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webview_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_webviewquick_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt_functions.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt_config.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++/qmake.conf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/exclusive_builds.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/toolchain.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/default_pre.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resolve_config.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/default_post.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qml_debug.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/warn_on.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/permissions.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qt.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resources_functions.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/resources.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/moc.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/unix/opengl.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/unix/thread.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/qmake_use.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/file_copies.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/testcase_targets.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/exceptions.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/yacc.prf:
+/home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/lex.prf:
 ../../InstagramPlugin.pro:
 ../../Instagram.qrc:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6Quick.prl:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6OpenGL.prl:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6Gui.prl:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6QmlModels.prl:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6Qml.prl:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6Network.prl:
-../../../../Qt/6.7.0/gcc_64/lib/libQt6Core.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Quick.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6OpenGL.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Gui.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6QmlModels.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Qml.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Network.prl:
+/home/shankar/Qt/6.7.0/gcc_64/lib/libQt6Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../../InstagramPlugin.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 
 qmake_all: FORCE
 
 
-all: Makefile ../../bins/com/mycompany/Instagram/libInstagramPlugin.so
+all: Makefile ../../../../Plugins_build/com/mycompany/Instagram/libInstagramPlugin.so
 
 dist: distdir FORCE
 	(cd `dirname $(DISTDIR)` && $(TAR) $(DISTNAME).tar $(DISTNAME) && $(COMPRESS) $(DISTNAME).tar) && $(MOVE) `dirname $(DISTDIR)`/$(DISTNAME).tar.gz . && $(DEL_FILE) -r $(DISTDIR)
@@ -1142,7 +1145,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../Instagram.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents ../../../../Qt/6.7.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents /home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../../Instagram.h ../../InstagramPlugin_plugin.h ../../MyItem.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../../Instagram.cpp ../../InstagramPlugin_plugin.cpp ../../MyItem.cpp $(DISTDIR)/
 
@@ -1153,15 +1156,15 @@ clean: compiler_clean
 
 
 distclean: clean 
-	-$(DEL_FILE) ../../bins/com/mycompany/Instagram/$(TARGET) 
+	-$(DEL_FILE) ../../../../Plugins_build/com/mycompany/Instagram/$(TARGET) 
 	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
 ####### Sub-libraries
 
-/home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/qmldir: /home/shankar/QtTrsin/InstagramPlugin/qmldir
-	$(COPY_FILE) /home/shankar/QtTrsin/InstagramPlugin/qmldir /home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/qmldir
+/home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/qmldir: /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/qmldir
+	$(COPY_FILE) /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/qmldir /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/qmldir
 
 mocclean: compiler_moc_header_clean compiler_moc_objc_header_clean compiler_moc_source_clean
 
@@ -1175,470 +1178,470 @@ compiler_rcc_make_all: qrc_Instagram.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_Instagram.cpp
 qrc_Instagram.cpp: ../../Instagram.qrc \
-		../../../../Qt/6.7.0/gcc_64/libexec/rcc \
+		/home/shankar/Qt/6.7.0/gcc_64/libexec/rcc \
 		../../InstagramItem.qml
 	/home/shankar/Qt/6.7.0/gcc_64/libexec/rcc -name Instagram ../../Instagram.qrc -o qrc_Instagram.cpp
 
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
-moc_predefs.h: ../../../../Qt/6.7.0/gcc_64/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -Wall -Wextra -dM -E -o moc_predefs.h ../../../../Qt/6.7.0/gcc_64/mkspecs/features/data/dummy.cpp
+moc_predefs.h: /home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/data/dummy.cpp
+	g++ -pipe -g -Wall -Wextra -dM -E -o moc_predefs.h /home/shankar/Qt/6.7.0/gcc_64/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_Instagram.cpp moc_InstagramPlugin_plugin.cpp moc_MyItem.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_Instagram.cpp moc_InstagramPlugin_plugin.cpp moc_MyItem.cpp
 moc_Instagram.cpp: ../../Instagram.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QObject \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QObject \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
 		moc_predefs.h \
-		../../../../Qt/6.7.0/gcc_64/libexec/moc
-	/home/shankar/Qt/6.7.0/gcc_64/libexec/moc $(DEFINES) --include /home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/moc_predefs.h -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++ -I/home/shankar/QtTrsin/InstagramPlugin -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../Instagram.h -o moc_Instagram.cpp
+		/home/shankar/Qt/6.7.0/gcc_64/libexec/moc
+	/home/shankar/Qt/6.7.0/gcc_64/libexec/moc $(DEFINES) --include /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/moc_predefs.h -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++ -I/home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../Instagram.h -o moc_Instagram.cpp
 
 moc_InstagramPlugin_plugin.cpp: ../../InstagramPlugin_plugin.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/QQmlExtensionPlugin \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlextensionplugin.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qplugin.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qjsonobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qjsonvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcborvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qset.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcborcommon.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/quuid.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20algorithm.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QUrl \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlextensioninterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/QQmlExtensionPlugin \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlextensionplugin.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qplugin.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qjsonobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qjsonvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcborvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qset.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcborcommon.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qregularexpression.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/quuid.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20algorithm.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QUrl \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlextensioninterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
 		moc_predefs.h \
-		../../../../Qt/6.7.0/gcc_64/libexec/moc
-	/home/shankar/Qt/6.7.0/gcc_64/libexec/moc $(DEFINES) --include /home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/moc_predefs.h -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++ -I/home/shankar/QtTrsin/InstagramPlugin -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../InstagramPlugin_plugin.h -o moc_InstagramPlugin_plugin.cpp
+		/home/shankar/Qt/6.7.0/gcc_64/libexec/moc
+	/home/shankar/Qt/6.7.0/gcc_64/libexec/moc $(DEFINES) --include /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/moc_predefs.h -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++ -I/home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../InstagramPlugin_plugin.h -o moc_InstagramPlugin_plugin.cpp
 
 moc_MyItem.cpp: ../../MyItem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/QQuickPaintedItem \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qquickpainteditem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qquickitem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquickglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtguiglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtgui-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtguiexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquick-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquickexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqml.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlprivate.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qset.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmllist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlparserstatus.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetaobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversionnumber.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtyperevision.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlregistration.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlcomponent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlerror.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QObject \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QList \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qproperty.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpropertyprivate.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qeventpoint.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qvector2d.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qvectornd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpoint.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrect.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmargins.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsize.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpointingdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qinputdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qscreen.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QRect \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QSize \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QSizeF \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/QTransform \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtransform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpolygon.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qregion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qwindowdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qline.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnativeinterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qscreen_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdeadlinetimer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qelapsedtimer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qeventloop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfuture.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfutureinterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmutex.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtsan_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qresultstore.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfuture_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qthreadpool.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qthread.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrunnable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexception.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpromise.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qguiapplication_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qkeysequence.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qfont.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qaccessible.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qcolor.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qrgb.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qrgba64.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qaccessible_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/QQuickPaintedItem \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qquickpainteditem.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qquickitem.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquickglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtgui-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtguiexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquick-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquickexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqml.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlprivate.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qset.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmllist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlparserstatus.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetaobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversionnumber.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtyperevision.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlregistration.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlcomponent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlerror.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QObject \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QList \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qproperty.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpropertyprivate.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qeventpoint.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qvector2d.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qvectornd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpoint.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrect.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmargins.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsize.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpointingdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qinputdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qscreen.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QRect \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QSize \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QSizeF \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/QTransform \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtransform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpolygon.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qregion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qline.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnativeinterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qscreen_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfuture.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmutex.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtsan_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qresultstore.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qthreadpool.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qthread.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrunnable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexception.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpromise.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qinputmethod.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qguiapplication_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qkeysequence.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qfont.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qaccessible.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qcolor.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qrgb.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qrgba64.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qaccessible_base.h \
 		moc_predefs.h \
-		../../../../Qt/6.7.0/gcc_64/libexec/moc
-	/home/shankar/Qt/6.7.0/gcc_64/libexec/moc $(DEFINES) --include /home/shankar/QtTrsin/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/moc_predefs.h -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++ -I/home/shankar/QtTrsin/InstagramPlugin -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../MyItem.h -o moc_MyItem.cpp
+		/home/shankar/Qt/6.7.0/gcc_64/libexec/moc
+	/home/shankar/Qt/6.7.0/gcc_64/libexec/moc $(DEFINES) --include /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/build/Desktop_Qt_6_7_0-Debug/moc_predefs.h -I/home/shankar/Qt/6.7.0/gcc_64/mkspecs/linux-g++ -I/home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin -I/home/shankar/Qt/6.7.0/gcc_64/include -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick -I/home/shankar/Qt/6.7.0/gcc_64/include/QtOpenGL -I/home/shankar/Qt/6.7.0/gcc_64/include/QtGui -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlModels -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQml -I/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration -I/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork -I/home/shankar/Qt/6.7.0/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../MyItem.h -o moc_MyItem.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1655,538 +1658,538 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 Instagram.o: ../../Instagram.cpp ../../Instagram.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QObject \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QObject \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Instagram.o ../../Instagram.cpp
 
 InstagramPlugin_plugin.o: ../../InstagramPlugin_plugin.cpp ../../InstagramPlugin_plugin.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/QQmlExtensionPlugin \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlextensionplugin.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qplugin.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qjsonobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qjsonvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcborvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qset.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcborcommon.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/quuid.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20algorithm.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QUrl \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlextensioninterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/QQmlExtensionPlugin \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlextensionplugin.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qplugin.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qjsonobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qjsonvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcborvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qset.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcborcommon.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qregularexpression.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/quuid.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20algorithm.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QUrl \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlextensioninterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
 		../../MyItem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/QQuickPaintedItem \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qquickpainteditem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qquickitem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquickglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtguiglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtgui-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtguiexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquick-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquickexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqml.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlprivate.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmllist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlparserstatus.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetaobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversionnumber.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtyperevision.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlregistration.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlcomponent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlerror.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QObject \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QList \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qproperty.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpropertyprivate.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qeventpoint.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qvector2d.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qvectornd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpoint.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrect.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmargins.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsize.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpointingdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qinputdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qscreen.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QRect \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QSize \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QSizeF \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/QTransform \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtransform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpolygon.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qregion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qwindowdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qline.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnativeinterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qscreen_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdeadlinetimer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qelapsedtimer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qeventloop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfuture.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfutureinterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmutex.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtsan_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qresultstore.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfuture_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qthreadpool.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qthread.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrunnable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexception.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpromise.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qguiapplication_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qkeysequence.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qfont.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qaccessible.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qcolor.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qrgb.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qrgba64.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qaccessible_base.h
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/QQuickPaintedItem \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qquickpainteditem.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qquickitem.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquickglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtgui-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtguiexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquick-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquickexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqml.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlprivate.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmllist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlparserstatus.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetaobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversionnumber.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtyperevision.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlregistration.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlcomponent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlerror.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QObject \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QList \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qproperty.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpropertyprivate.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qeventpoint.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qvector2d.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qvectornd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpoint.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrect.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmargins.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsize.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpointingdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qinputdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qscreen.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QRect \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QSize \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QSizeF \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/QTransform \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtransform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpolygon.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qregion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qline.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnativeinterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qscreen_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfuture.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmutex.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtsan_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qresultstore.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qthreadpool.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qthread.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrunnable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexception.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpromise.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qinputmethod.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qguiapplication_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qkeysequence.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qfont.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qaccessible.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qcolor.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qrgb.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qrgba64.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qaccessible_base.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o InstagramPlugin_plugin.o ../../InstagramPlugin_plugin.cpp
 
 MyItem.o: ../../MyItem.cpp ../../MyItem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/QQuickPaintedItem \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qquickpainteditem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qquickitem.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquickglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtguiglobal.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtgui-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtguiexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquick-config.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQuick/qtquickexports.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqml.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlprivate.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qset.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qjsvalue.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmllist.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlparserstatus.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmetaobject.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qversionnumber.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtyperevision.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlregistration.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlcomponent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtQml/qqmlerror.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QObject \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QList \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qproperty.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpropertyprivate.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qevent.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qiodevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qeventpoint.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qvector2d.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qvectornd.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpoint.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrect.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmargins.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qsize.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpointingdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qinputdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qscreen.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QRect \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QSize \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/QSizeF \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/QTransform \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtransform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpolygon.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qregion.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qwindowdefs.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qline.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qnativeinterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qscreen_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qdeadlinetimer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qelapsedtimer.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qeventloop.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfuture.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfutureinterface.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qmutex.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qtsan_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qresultstore.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qfuture_impl.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qthreadpool.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qthread.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qrunnable.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qexception.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qpromise.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qguiapplication_platform.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qkeysequence.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qfont.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qaccessible.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qcolor.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qrgb.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qrgba64.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qaccessible_base.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/QPainter \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpainter.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpixmap.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpaintdevice.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qimage.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpixelformat.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qtextoption.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qpen.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qbrush.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qfontinfo.h \
-		../../../../Qt/6.7.0/gcc_64/include/QtGui/qfontmetrics.h
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/QQuickPaintedItem \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qquickpainteditem.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qquickitem.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquickglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversionchecks.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfiginclude.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconfig.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtconfigmacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtcoreexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qassert.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtnoop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypes.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtversion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtclasshelpermacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlogging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qflags.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qyieldcpu.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qconstructormacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdarwinhelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexceptionhandling.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qforeach.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttypetraits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmalloc.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qminmax.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qoverload.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qswap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtenvironmentvariables.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtresource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qttranslation.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqml-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qtqmlexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtguiglobal.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtgui-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtguiexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquick-config.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQuick/qtquickexports.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqml.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlprivate.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstring.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qchar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpair.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qxptype_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20functional.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20memory.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringfwd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q20type_traits.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlatin1stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringconverter_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvariant.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetatype.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcompare.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcomparehelpers.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatastream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevicebase.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfloat16.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhashfunctions.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmath.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qalgorithms.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetacontainer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontainerinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtaggedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qscopeguard.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdebug.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtextstream.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiterator.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbytearraylist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringlist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qshareddata_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qset.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qhash.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/q23utility.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qobject_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qbindingstorage.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qjsvalue.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmllist.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlparserstatus.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdatetime.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcalendar.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qlocale.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmetaobject.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpointer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qurl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qversionnumber.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtyperevision.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlregistration.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlcomponent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtQml/qqmlerror.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QObject \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QList \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qproperty.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpropertyprivate.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qevent.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qiodevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qeventpoint.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qvector2d.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qvectornd.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpoint.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrect.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmargins.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qsize.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpointingdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qinputdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qscreen.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QRect \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QSize \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/QSizeF \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/QTransform \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtransform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpolygon.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qregion.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qwindowdefs.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qline.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qnativeinterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qscreen_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfuture.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qmutex.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qtsan_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qresultstore.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qthreadpool.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qthread.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qrunnable.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qexception.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qpromise.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qinputmethod.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qguiapplication_platform.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qkeysequence.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qfont.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtCore/qendian.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qaccessible.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qcolor.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qrgb.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qrgba64.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qaccessible_base.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/QPainter \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpainter.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpixmap.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpaintdevice.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qimage.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpixelformat.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qtextoption.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qpen.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qbrush.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qfontinfo.h \
+		/home/shankar/Qt/6.7.0/gcc_64/include/QtGui/qfontmetrics.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MyItem.o ../../MyItem.cpp
 
 qrc_Instagram.o: qrc_Instagram.cpp 
@@ -2205,7 +2208,7 @@ moc_MyItem.o: moc_MyItem.cpp
 
 install_target: first FORCE
 	@test -d $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram || mkdir -p $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram
-	$(QINSTALL_PROGRAM) ../../bins/com/mycompany/Instagram/$(TARGET) $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram/$(TARGET)
+	$(QINSTALL_PROGRAM) ../../../../Plugins_build/com/mycompany/Instagram/$(TARGET) $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram/$(TARGET)
 
 uninstall_target: FORCE
 	-$(DEL_FILE) $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram/$(TARGET)
@@ -2214,7 +2217,7 @@ uninstall_target: FORCE
 
 install_qmldir: first FORCE
 	@test -d $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram || mkdir -p $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram
-	$(QINSTALL) /home/shankar/QtTrsin/InstagramPlugin/qmldir $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram/qmldir
+	$(QINSTALL) /home/shankar/Downloads/PliginsFolders/pluginApps/InstagramPlugin/qmldir $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram/qmldir
 
 uninstall_qmldir: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/home/shankar/Qt/6.7.0/gcc_64/qml/com/mycompany/Instagram/qmldir

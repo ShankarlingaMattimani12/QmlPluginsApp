@@ -10,7 +10,7 @@
 JsonParser::JsonParser()
 {
     qDebug()<<Q_FUNC_INFO;
-    m_baseurl="/home/shankar/Downloads/PliginsFolders/JsonData";
+    m_baseurl="/home/shankar/Downloads/PliginsFolders/Plugins_build/com/mycompany";
     parseFolders();
 }
 

@@ -5,7 +5,7 @@ CONFIG += plugin c++11
 
 TARGET = $$qtLibraryTarget($$TARGET)
 uri = com.mycompany.WhatsApp
-DESTDIR = $$PWD/bins/com/mycompany/WhatsApp
+DESTDIR =  $$PWD/../../Plugins_build/com/mycompany/WhatsApp
 
 # Input
 SOURCES += \
