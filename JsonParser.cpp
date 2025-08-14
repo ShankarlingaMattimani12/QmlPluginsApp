@@ -4,13 +4,16 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QFile>
+#include<QCoreApplication>
 
  JsonParser *JsonParser::m_jsonParser=nullptr;
 
 JsonParser::JsonParser()
 {
     qDebug()<<Q_FUNC_INFO;
-    m_baseurl="/home/shankar/Downloads/PliginsFolders/Plugins_build/com/mycompany";
+    // m_baseurl="/home/shankar/Downloads/PliginsFolders/Plugins_build/com/mycompany";
+    QString baseUrl = QCoreApplication::applicationDirPath() + "/../../Plugins_build/com/mycompany";
+    m_baseurl=baseUrl;
     parseFolders();
 }
 
