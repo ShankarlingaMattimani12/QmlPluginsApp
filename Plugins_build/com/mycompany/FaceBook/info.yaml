@@ -1,5 +1,5 @@
 {
-    "AppIcon": "qrc:/contacts.png",
+    "AppIcon": "qrc:/Images/instagram.png",
     "AppName": "camera",
     "MainFileQml": "main.qml",
     "PluginName": "dummy_plugin",

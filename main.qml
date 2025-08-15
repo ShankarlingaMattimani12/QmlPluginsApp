@@ -5,7 +5,7 @@ import QtQuick.Controls 2.12
 import com.mycompany.WhatsApp 1.0
 import com.mycompany.Instagram 1.0
 import com.mycompany.FaceBook 1.0
-import com.mycompany.qmlcomponents 1.0
+// import com.mycompany.qmlcomponents 1.0
 
 Window {
     width: 1200
