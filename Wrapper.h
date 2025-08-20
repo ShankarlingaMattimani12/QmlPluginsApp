@@ -17,7 +17,6 @@ public:
     Q_PROPERTY(QSortFilterProxyModel* filteredAppModel READ filteredAppModel CONSTANT)
 
 public:
-    Q_INVOKABLE bool loadFromJson(const QString &path);
     Q_INVOKABLE void setCategoryFilter(const QString &category);
 
     AppListModel* appModel() const;

@@ -116,7 +116,7 @@ Window {
                 }
 
                 Repeater {
-                    model: ["Production", "Setup", "Settings", "Maintenance"]
+                    model: wrapper.categoriesModel
 
                     Button {
                         Layout.alignment: Qt.AlignHCenter
